@@ -8,14 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Welcome to my Flutter-Tester!!",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Welcome to Pascal's Flutter"),
-        ),
-        body: Center(
-          child: RandomWords(),
-        ),
-      ),
+      home: RandomWords(),
     );
   }
 }
@@ -33,7 +26,6 @@ class _RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Pascal's Name Pair Generator"),
-        toolbarOpacity: .5,
       ),
       body: _buildSuggestions(),
     );
