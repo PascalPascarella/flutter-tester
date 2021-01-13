@@ -6,7 +6,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final twoWords = WordPair.random();
     return MaterialApp(
       title: "Welcome to my Flutter-Tester!!",
       home: Scaffold(
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
           title: const Text("Welcome to Pascal's Flutter"),
         ),
         body: Center(
-          child: Text(twoWords.asPascalCase),
+          child: RandomWords(),
         ),
       ),
     );
