@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Welcome to my Flutter-Tester!!",
       home: RandomWords(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
