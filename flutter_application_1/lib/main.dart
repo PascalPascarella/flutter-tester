@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Welcome to my Flutter-Tester!!",
+      theme: ThemeData(primaryColor: Colors.orange[900]),
       home: RandomWords(),
       debugShowCheckedModeBanner: false,
     );
@@ -61,7 +62,7 @@ class _RandomWordsState extends State<RandomWords> {
       ),
       trailing: Icon(
         alreadySaved ? Icons.favorite : Icons.favorite_border,
-        color: alreadySaved ? Colors.red : null,
+        color: alreadySaved ? Colors.purple[900] : null,
       ),
       onTap: () {
         setState(() {
